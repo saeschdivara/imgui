@@ -8,9 +8,6 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
             imgui_tables.cpp
             imgui_widgets.cpp
             imgui_demo.cpp
-    )
-
-    add_library(imgui_extra STATIC
             misc/cpp/imgui_stdlib.cpp
     )
 
@@ -21,9 +18,7 @@ else()
             imgui_tables.cpp
             imgui_widgets.cpp
             imgui_demo.cpp
+            misc/cpp/imgui_stdlib.cpp
             )
 
-    add_library(imgui_extra SHARED
-            misc/cpp/imgui_stdlib.cpp
-    )
 endif()
